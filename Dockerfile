@@ -17,5 +17,5 @@ COPY . .
 EXPOSE 8000
                            # exposing the port that the FastAPI app will run on
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
                            # command to run when the container starts
