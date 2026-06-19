@@ -4,9 +4,9 @@ sqlalchemy  # sql but for python
 psycopg2-binary  # postgreSQL database adapter for python
 python-jose[cryptography]  # for creating and verifying JWT tokens
 passlib[bcrypt]  # for hashing passwords
+bcrypt==4.0.1  # pinned — newer bcrypt versions break passlib's version detection
 python-multipart # for handling file uploads
 pydantic-settings  # for managing application settings and environment variables
 python-dotenv  # for loading environment variables from a .env file
 pydantic-settings  # for managing application settings and environment variables
                    # using in place of os.getenv (its cleaner and more efficient)
-                   
